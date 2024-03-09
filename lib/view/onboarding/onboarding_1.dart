@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:furniflex/common/colors.dart';
 import 'package:furniflex/view/auth/login_screen.dart';
 import 'package:furniflex/view/onboarding/page_view.dart';

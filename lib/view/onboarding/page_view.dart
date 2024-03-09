@@ -28,7 +28,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
           height: 16.h,
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -47,7 +47,7 @@ class _PageViewScreenState extends State<PageViewScreen> {
                 widget.subtitle ?? "",
                 textAlign: TextAlign.center,
                 style: GoogleFonts.outfit(
-                  color: Color(0xff262728),
+                  color: const Color(0xff262728),
                   fontSize: 18.h,
                 ),
               ),
