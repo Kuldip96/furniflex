@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furniflex/home_controller.dart';
+import 'package:furniflex/lang_controller.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,12 +12,14 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   var homecontroller = Get.put(HomeController());
+  var langcontroller = Get.put(LangController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
+        title: Text('How are you'.tr),
       ),
       body: Column(
         children: [
@@ -31,6 +34,24 @@ class _HomeScreenState extends State<HomeScreen> {
               homecontroller.increament();
             },
             icon: Icon(Icons.add),
+          ),
+          TextButton(
+            onPressed: () {
+              langcontroller.changLocale('hi', 'IN');
+            },
+            child: Text('Hindi'),
+          ),
+          TextButton(
+            onPressed: () {
+              langcontroller.changLocale('en', 'US');
+            },
+            child: Text('English'),
+          ),
+          TextButton(
+            onPressed: () {
+              langcontroller.changLocale('fr', 'FR');
+            },
+            child: Text('france'),
           ),
         ],
       ),

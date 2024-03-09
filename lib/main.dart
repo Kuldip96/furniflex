@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:furniflex/common/routs/routs_screen.dart';
+import 'package:furniflex/common/string.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context, child) {
           return GetMaterialApp(
+            translations: Strings(),
+            locale: const Locale('en', 'US'), //Get.deviceLocale(),
+            fallbackLocale: const Locale('en', 'US'),
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: ThemeData(
