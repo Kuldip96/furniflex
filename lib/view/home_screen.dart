@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
-        title: Text('How are you'.tr),
+        title: Text('How are yo'.tr),
       ),
       body: Column(
         children: [
@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () {
               langcontroller.changLocale('hi', 'IN');
             },
-            child: Text('Hindi'),
+            child: Text('hindi'.tr),
           ),
           TextButton(
             onPressed: () {
@@ -52,6 +52,10 @@ class _HomeScreenState extends State<HomeScreen> {
               langcontroller.changLocale('fr', 'FR');
             },
             child: Text('france'),
+          ),
+          Text(
+            'pune'.tr,
+            style: TextStyle(fontSize: 30),
           ),
         ],
       ),
