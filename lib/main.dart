@@ -13,23 +13,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-        designSize: const Size(393, 852),
-        minTextAdapt: true,
-        splitScreenMode: true,
-        builder: (context, child) {
-          return GetMaterialApp(
-            translations: Strings(),
-            locale: const Locale('en', 'US'), //Get.deviceLocale(),
-            fallbackLocale: const Locale('en', 'US'),
-            debugShowCheckedModeBanner: false,
-            title: 'Flutter Demo',
-            theme: ThemeData(
-              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-              useMaterial3: true,
-            ),
-            initialRoute: Routes.home,
-            getPages: getPage,
-          );
-        });
+      designSize: const Size(393, 852),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return GetMaterialApp(
+          translations: Strings(),
+          locale: const Locale('en', 'US'), //Get.deviceLocale(),
+          fallbackLocale: const Locale('en', 'US'),
+          debugShowCheckedModeBanner: false,
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true,
+          ),
+          initialRoute: Routes.home,
+          getPages: getPage,
+        );
+      },
+    );
   }
 }
